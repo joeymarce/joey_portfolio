@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joey Marce | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#1f242d] text-white">
+
+    <header class="fixed top-0 left-0 w-full px-6 py-5 bg-[#1f242d] flex justify-center md:justify-end items-center z-50 border-b border-gray-800 md:px-[10%]">
+        <nav class="hidden md:flex space-x-12">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="md:hidden absolute right-6 cursor-pointer text-2xl text-[#0ef]" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav id="mobile-menu" class="absolute top-full left-0 w-full bg-[#323946] flex flex-col items-center py-6 space-y-6 hidden border-b border-[#0ef]">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="index.html" class="mobile-link">About</a>
+            <a href="index.html" class="mobile-link">Skills</a>
+            <a href="index.html" class="mobile-link">Portfolio</a>
+            <a href="index.html" class="mobile-link">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between pt-32 px-[10%] gap-10">
+        <div class="text-center md:text-left order-2 md:order-1">
+            <h3 class="text-xl md:text-2xl font-semibold text-gray-300">Hello, It's Me</h3>
+            <h1 class="text-6xl md:text-8xl font-bold my-2">Joey Marce</h1>
+            <h3 class="text-xl md:text-3xl font-semibold">And I'm a <span class="neon-text" id="typewriter"></span></h3>
+            <p class="mt-6 text-gray-400 max-w-md leading-relaxed">3rd Year BSIT 3 South Student. Passionate about web development and building modern, responsive websites.</p>
+            
+            <div class="flex justify-center md:justify-start space-x-6 mt-8">
+                <a href="index.html" class="social-icon text-xl"><i class="fab fa-facebook-f"></i></a>
+                <a href="index.html" class="social-icon text-xl"><i class="fab fa-github"></i></a>
+                <a href="index.html" class="social-icon text-xl"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="order-1 md:order-2">
+            <div class="hexagon w-64 h-72 md:w-80 md:h-96 flex items-center justify-center overflow-hidden">
+                <img src="profile.jpg" alt="Joey Marce" class="w-full h-full object-cover bg-[#323946]">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-[#323946] px-[10%] py-24">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24">
+            <div class="hexagon w-56 h-64 md:w-64 md:h-72 shrink-0 shadow-[0_0_20px_#0ef]">
+                 <img src="joey.jpg" alt="About Joey" class="w-full h-full object-cover bg-[#1f242d]">
+            </div>
+
+            <div class="text-center md:text-left">
+                <h2 class="text-5xl font-bold">About <span class="neon-text">Me</span></h2>
+                <h3 class="text-2xl font-semibold mt-4 text-[#0ef]">BSIT 3 South Student</h3>
+                <p class="text-gray-300 mt-6 leading-relaxed max-w-xl text-lg">
+                    Hello! I am Joey Marce. I am passionate about web development and continuously improving my programming skills. I enjoy learning new technologies and building modern, responsive websites.
+                </p>
+                <div class="mt-10 p-6 border-l-4 border-[#0ef] bg-[#1f242d]/50">
+                    <h3 class="text-xl font-bold neon-text uppercase tracking-widest">Career Objective</h3>
+                    <p class="text-gray-300 mt-3 max-w-xl">
+                        My goal is to become a professional web developer. I aim to strengthen my skills in front-end and back-end development, learn additional programming languages, and gain real-world experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="px-[10%] py-24 text-center">
+        <h2 class="text-5xl font-bold mb-16">Technical <span class="neon-text">Skills</span></h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
+            <div class="skill-card"><i class="fab fa-html5 text-5xl text-[#0ef]"></i><p class="mt-4 font-bold tracking-wide">HTML</p></div>
+            <div class="skill-card"><i class="fab fa-css3-alt text-5xl text-[#0ef]"></i><p class="mt-4 font-bold tracking-wide">CSS</p></div>
+            <div class="skill-card"><i class="fab fa-js text-5xl text-[#0ef]"></i><p class="mt-4 font-bold tracking-wide">JavaScript</p></div>
+            <div class="skill-card"><i class="fab fa-react text-5xl text-[#0ef]"></i><p class="mt-4 font-bold tracking-wide">React</p></div>
+            <div class="skill-card"><i class="fa-solid fa-wind text-5xl text-[#0ef]"></i><p class="mt-4 font-bold tracking-wide">Tailwind</p></div>
+            <div class="skill-card"><i class="fab fa-python text-5xl text-[#0ef]"></i><p class="mt-4 font-bold tracking-wide">Python</p></div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-[#323946] px-[10%] py-24">
+        <h2 class="text-5xl font-bold text-center mb-16">Latest <span class="neon-text">Projects</span></h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="project-box"><img src="1st.jpg" class="w-full h-64 object-cover rounded-2xl border border-gray-700 shadow-lg"></div>
+            <div class="project-box"><img src="2nd.jpg" class="w-full h-64 object-cover rounded-2xl border border-gray-700 shadow-lg"></div>
+            <div class="project-box"><img src="3rd.jpg" class="w-full h-64 object-cover rounded-2xl border border-gray-700 shadow-lg"></div>
+        </div>
+        <p class="text-center mt-12 text-gray-400 italic text-lg">"Active learning in progress. New web applications coming soon."</p>
+    </section>
+
+    <section id="contact" class="px-[10%] py-24 text-center">
+        <h2 class="text-5xl font-bold mb-12">Contact <span class="neon-text">Me!</span></h2>
+        <div class="max-w-3xl mx-auto bg-[#323946] p-10 rounded-3xl shadow-2xl border border-gray-700">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-phone-alt neon-text text-2xl"></i>
+                    <span class="text-xl">09858380720</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-envelope neon-text text-2xl"></i>
+                    <a href="mailto:joeyabello47@gmail.com" class="text-xl hover:text-[#0ef] transition">joeyabello47@gmail.com</a>
+                </div>
+            </div>
+            <form class="flex flex-col space-y-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <input type="text" placeholder="Full Name" class="input-field">
+                    <input type="email" placeholder="Email Address" class="input-field">
+                </div>
+                <textarea placeholder="Your Message" rows="5" class="input-field"></textarea>
+                <button type="button" class="neon-btn text-black font-extrabold py-4 rounded-xl text-lg uppercase tracking-widest">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-500 border-t border-gray-800 bg-[#1f242d]">
+        <p class="text-base">&copy; 2026 Joey Marce | BSIT 3 South</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+
+.neon-text { color: #0ef; text-shadow: 0 0 10px #0ef; }
+
+.neon-btn { 
+    background: #0ef; 
+    box-shadow: 0 0 15px #0ef; 
+    transition: 0.3s ease; 
+}
+.neon-btn:hover { box-shadow: none; transform: translateY(-2px); }
+
+.hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background: #0ef;
+    padding: 4px;
+}
+.hexagon img { clip-path: inherit; }
+
+.social-icon {
+    width: 45px; height: 45px; border: 2px solid #0ef; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #0ef; transition: 0.3s;
+}
+.social-icon:hover { background: #0ef; color: #1f242d; box-shadow: 0 0 15px #0ef; }
+
+.nav-link:hover { color: #0ef; text-shadow: 0 0 5px #0ef; }
+.mobile-link { font-size: 1.25rem; font-weight: 500; }
+.mobile-link:hover { color: #0ef; }
+
+.skill-card {
+    background: #1f242d; padding: 25px; border-radius: 15px;
+    border: 1px solid #323946; transition: 0.3s;
+}
+.skill-card:hover { border-color: #0ef; transform: translateY(-10px); }
+
+.input-field {
+    background: #1f242d; padding: 15px; border-radius: 10px;
+    outline: none; border: 1px solid transparent; color: white;
+}
+.input-field:focus { border-color: #0ef; }
+
+#mobile-menu.active { display: flex !important; }
+section { scroll-margin-top: 80px; }
